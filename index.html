@@ -6,31 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banansa speak</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300&display=swap');
+        :root{
+            --primary-color:#7F1D1D;
+            --off-white: #F3F4F6;
+        }
+
         textarea{
             width: 90%;
             padding: 1rem;
-            height:2rem;
+            height:4rem;
             display:block;
             margin:1rem;
         }
         #output{
             width:90%;
             padding:1rem;
-            height:2rem;
+            height:4rem;
           border: 1px solid black;
             margin:1rem;
+          
         }
+        .container{
+            padding : 1rem orem;
+
+        }
+        .navigation{
+            background-color: var(--primary-color);
+            padding: 1rem;
+            color:white;
+
+        }
+        #bt-translate{
+            background-color: var(--primary-color);
+            border-radius: 0.2rem;
+            color: white;
+            display: block;
+            max-width: 120px;
+            margin:1rem 1rem 1rem 1rem;
+
+        }
+        h1{
+            text-align: center;
+        }
+       h3 {
+           text-align: center;
+           background-color: var(--primary-color);
+           padding: 1rem;
+           color: white;
+           border-radius:5rem 4rem 5rem 4rem;
+
+
+       }
+       .footer{
+           background-color: var(--primary-color);
+           padding: 4rem 1rem;
+           bottom: 0;
+           width:100%;
+           overflow: hidden;
+           position: fixed;
+
+          
+          
+
+
+       }
+            
+            
+        
+
+        
+
+        
     </style>
   
 </head>
 <body>
-    <h1>talk banana</h1>
+<nav class="navigation container">
+    <h1>Talk Banana</h1>
+    </nav>
     <textarea id="txtarea" placeholder="write ur sentence in english we will convert into banana"></textarea>
     <button id="bt-translate">translate</button>
 
 
-    <div  style="font-size: large;">OUTPUT will be here</div>
+    <div  style="font-size: large;"><h3>OUTPUT </h3></div>
     <div id="output"></div>
+    <footer class="footer">
+
+    </footer>
     
     <script src="app.js" type="text/javascript"></script>
 </body>

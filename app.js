@@ -2,7 +2,8 @@ var btntranslate = document.querySelector("#bt-translate");
 var txtarea = document.querySelector("#txtarea");
 var outputdiv = document.querySelector("#output");
 
-var serverURL ="	https://api.funtranslations.com/translate/minion.json"
+var serverURL = "https://api.funtranslations.com/translate/minion.json"
+
 
 
 function gettranslationalurl(text){
@@ -19,11 +20,14 @@ var inputText = txtarea.Value;
 
  fetch(gettranslationalurl(inputText))
  .then(Response => Response.json())
- .then(json =>  {
-     var translatedtext = json.contents.translated;
-     outputdiv.innerText = translatedtext;
- }
- )
+ .then(json => {
+     var translatedText= json.contents.translation;
+     outputdiv.innerText= translatedText;
+ })
+     
+ 
+ 
+ 
  .catch(errorhandler)
 
    
